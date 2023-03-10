@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Manrope';
   
@@ -23,23 +27,14 @@ h1  {
 }
 
 .header-container {
-  /* position: absolute; */
-  margin-bottom: 70px;
-  margin-top: 30px;
+  margin-bottom: 67px;
+  margin-top: 32px;
   width: 1151.35px;
-  height: 25.18px;
-  top: 32.82px;
-  
 }
 
 .header-img {
-  height: 21.420000076293945px;
-  width: 126.88922119140625px;
-  left: 124.6500244140625px;
-  top: 32.820068359375px;
   border-radius: 0px;
-  padding-right: 480px;
-
+  margin-right: 544px;
 }
 .header-links {
   font-style: normal;
@@ -47,18 +42,22 @@ h1  {
   font-size: 18px;
   line-height: 25px;  
   letter-spacing: -0.03em;
-  padding-left: 60px;
+  margin-left: 60px;
   text-decoration: none;
   text-transform: uppercase;
   color: #121212;
 }
+.header-links:nth-child(2) {
+  margin-left: 0px;
+}
 
-.header-links:hover {
+a.header-links:hover {
   color: #C4C4C4;
-  text-decoration:underline;
+  border-bottom: 2px solid;
 }
 
 .body-rectangle_1 {
+padding-top: 30px;  
 position: relative;
 display: inline-block;
 }
@@ -68,8 +67,7 @@ display: inline-block;
   width: 1150px;
   left: 125px;
   top: 278px;
-  border-radius: 0px;
-  
+  border-radius: 0px; 
 }
 
 .body-p {
@@ -77,18 +75,25 @@ color: #ffffff;
 border-radius: nullpx;
 position: absolute;
 right: 0;
-bottom: 10px;
-font-size: 18px;
+bottom: 3px;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: -0.03em;
 padding: 40px 680px;
 width: 430px;
+height: 81px;
 }
 
-.about-us {
-  size: 45px;
-  padding-top:  150px ;
-  padding-bottom: 150px;
-  
+
+
+h2 {
+  padding-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
 }
+
+
 
 h4 {
 padding-bottom: 30px;
@@ -97,35 +102,52 @@ font-weight: 400;
 line-height: 61px;
 letter-spacing: -0.03em;
 text-align: left;
+width: 1048px;
+height: 366px;
+}
+
+.about-us {
+  size: 45px;
+  padding-top:  150px ;
+  padding-bottom: 217px;
 }
 
 
 .about-us-link {
   display: block;
+  position: absolute;
   height: 67px;
   width: 255px;
   border-radius: 5px;
   background-color: #AD1818;
   color: #fff;
   font-size: 20px;
-  line-height: 68px;
-  text-align: center;
+  line-height: 67px;
   text-decoration: none;
+  letter-spacing:-0.03em;
+  text-align: center;
+  padding: 20px, 40px, 20px, 40px;
+  
 }
+
+
 .project {
-  padding-top: 90px;
+  padding-top: 90px; 
 }
 
 .project:first-child {
   padding-top: 0px;
+
 }
 
-h2 {
-  padding-bottom: 30px;
-  
+.body-imgs {
+  height: 450px;
+  width: 1150px;
 }
+
 .p_project {
   margin-bottom: 15px;
+  margin-top: 15px;
   font-size: 30px;
   font-weight: 400;
   line-height: 41px;
@@ -168,6 +190,10 @@ letter-spacing: -0.03em;
   background-color: #AD1818;
 }
 
+.h2_fix {
+  padding-bottom: 34px;
+}
+
 .services {
   width: 1400px;
   padding-top: 150px;
@@ -181,14 +207,20 @@ h3{
   font-size: 30px;
 }
 
-/* .services_img {
-margin-top: 34px;
+.services_img {
 margin-bottom: 60px;
-} */
+}
+.services_img:nth-child(4) {
+  margin-bottom: 0px;
+}
 
 .divan {
   position: relative;
-  width: 1400px;
+  height: 717px;
+  background-image: url('/kurs/module1/resources/Divan.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   }
   
 .divan_p {
@@ -196,7 +228,9 @@ margin-bottom: 60px;
     border-radius: nullpx;
     position: absolute;
     font-size: 30px;
+    
     left: 125px;
+    
     top: 575px;
     width: 450px;
     line-height: 41px;
@@ -205,17 +239,32 @@ margin-bottom: 60px;
 
 .contacts {
   width: 1150px;
-  padding-top: 150px;
+  padding-top: 186px;
   padding-bottom: 150px;
+  position: relative;
 }
 
+.contacts::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 150px;
+  background-image: url('/kurs/module1/resources/ic_outline-phone-iphone.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
 
 .mail {
   font-size: 60px;
-  color: #474444;
+  color: #898989;
+  text-decoration: none;
+  border-bottom: 2px solid;
 }
 .mail :hover {
-  color: #4d4c4c;
+  color: #898989;
 }
 
 .tel {
@@ -226,7 +275,7 @@ margin-bottom: 60px;
 }
 .footer {
   width: 1400px;
-  height: 230px;
+  height: 229px;
   background-color: #121212;
 }
 
@@ -259,6 +308,6 @@ margin-bottom: 60px;
   padding-top: 87px;
   padding-bottom: 30px;
   width: 450px;
-  color: #ffffff;
+  color: #888888;
   font-size:  20px;
 }
