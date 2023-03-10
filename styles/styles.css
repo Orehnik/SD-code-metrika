@@ -217,7 +217,7 @@ margin-bottom: 60px;
 .divan {
   position: relative;
   height: 717px;
-  background-image: url('/kurs/module1/resources/Divan.png');
+  background-image: url('../resources/Divan.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -251,7 +251,7 @@ margin-bottom: 60px;
   width: 24px;
   height: 24px;
   top: 150px;
-  background-image: url('/kurs/module1/resources/ic_outline-phone-iphone.png');
+  background-image: url('../resources/ic_outline-phone-iphone.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
